@@ -1,0 +1,13 @@
+1) Take 2 sets as input & print their-
+i) size, ii) equility check, iii) union, iv) intersection
+
+2) Take a set as input & print the power set.
+
+3) Take 2 sets as input & print their cartecian product.
+
+4) Take n sets as input & print their cartecian product.
+
+5) Take 2 sets (say A and B) and validate if AXB = BXA, by printing the output.
+
+6) Resolve the problem for the equaion:
+A1 X A2 X ... X An = An X ... X A2 X A1

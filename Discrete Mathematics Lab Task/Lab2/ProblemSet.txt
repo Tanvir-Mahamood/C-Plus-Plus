@@ -1,0 +1,66 @@
+Set:1
+
+Problem A: Draw that Truth Table
+
+Problem Statement:
+Sifat is given a propositional logic. You need to draw the truth table giving the final value for all possible combination.
+Input Format:
+You’ll be given the propositional logic. There will be two variables. ‘a’ denotes “AND”, ‘o’ denotes
+“OR”, ‘c’ denotes “CONDITIONAL”, ‘b’ denotes “BICONDITIONAL” and ‘n’ denotes “NOT”. All
+characters will be separated by spaces.
+Output Format:
+Draw the truth table.
+Sample Input 1:
+(p a q) c (n p o q)
+Sample Output 1:
+T T T
+T F T
+F T T
+F F T
+
+Explanation:
+p q (p a q) (n p) (n p o q) ((p a q) c (n p o q))
+T T    T      F       T              T
+T F    F      F       F              T
+F T    F      T       T              T
+F F    F      T       T              T
+
+Set2:
+
+Problem A: Theory of Equivalence
+Problem Statement:
+Rizvi is given two propositional logics. You need to verify if both propositions are equivalent or not.
+Two propositions are equivalent only if they have same outcome for all possible combinations.
+Input Format:
+You’ll be given two propositional logics. There will be two variables. ‘a’ denotes “AND”, ‘o’ denotes
+“OR”, ‘c’ denotes “CONDITIONAL”, ‘b’ denotes “BICONDITIONAL” and ‘n’ denotes “NOT”. All
+characters will be separated by spaces.
+Output Format:
+Print “Equivalent” or “Not Equivalent”
+Sample Input 1:
+n (p o q)
+n p a n q
+Sample Output 1:
+Equivalent
+Explanation:
+This is the De Morgan’s theorem. Of course, they’re equivalent.
+
+
+Problem B: সত্যবাদী যুধীষ্ঠির, ষ্ঠিরন্তন ষ্ঠিথ্যাবাদী এবং  িানুষ (Human)
+Problem Statement:
+In a forest, there lived three types of people: সত্যবাদী যুধীষ্ঠির (Truthful Yudhisthira), ষ্ঠিরন্তন ষ্ঠিথ্যাবাদী
+(Eternal Lier) এবং িানুষ (Human). The first one always tells the truth. The second one always lies. The
+third one sometimes tells the truth, sometimes lies.
+Input Format:
+You’ll be given one propositional logic.
+Output Format:
+If the outcome of the proposition is true for all possible combinations, print “Truthful Yudhisthira”. If
+all outcomes are false, print “Eternal Lier”. Otherwise, print “Human”.
+Sample Input 1:
+p o n p
+Sample Output 1:
+Truthful Yudhisthira
+Explanation:
+If p is true, ~p is false. Therefore, p v ~p is true.
+Again, if p is false, ~p is true. Therefore, p v ~p is true.
+Hence, p v ~p is tautology. Therefore, the output is Truthful Yudhisthira.

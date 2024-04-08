@@ -1,0 +1,8 @@
+1) Finding mximum number
+2) Searching: Linear search, Binary search
+3) Sorting: Bubble sort, insertion sort
+4) Naive String Matcher
+5) Cashier Problem
+6) Matrix Multiplication
+7) Brutefirce approach for finding closest pair.
+Given n points(x coordinate, y coordinate). Print the closest pair.

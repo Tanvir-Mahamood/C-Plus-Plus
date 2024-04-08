@@ -1,0 +1,54 @@
+Problem A: Alice and Bob Play a Logic Game
+Problem Statement:
+Alice and Bob are playing a game of propositional logic. They have two Boolean variables A and B,
+and they want to perform three operations on them: or, and, and xor.
+Can you write a program to help them with this?
+Input Format:
+The input consists of a single line containing two Boolean variables A and B in the form of 0 or 1 separated by a space.
+Output Format:
+Output three lines. The first line should contain the result of an or operation on A and B, the second
+line should contain the result of an and operation on A and B, and the third line should contain the
+result of an xor operation on A and B. Each line should contain the Boolean expression in the form of a string.
+Sample Input 1:
+1 0
+Sample Output 1:
+1
+0
+1
+Explanation:
+The or operation of 1 and 0 is 1. The and operation of 1 and 0 is 0. The xor operation of 1 and 0 is 1.
+
+
+Problem B: Cryptic Game
+Problem Statement:
+Alice and Bob are playing a game of secret message passing. They have agreed to use the xor operation
+to encode and decode their messages. They have a secret key that they will use to xor with their
+messages. However, they need your help to write a program to perform the xor operation on their
+messages. The final output will be the (output%26)th letter of the alphabet.
+Input Format:
+The input consists of two lines. The first line contains the secret key, a string of lowercase letters. The
+second line contains the message, a string of lowercase letters. Both strings will have the same length.
+Output Format:
+Output a single line containing the result of the xor operation on the secret key and the message. The
+result should be in the form of a string of lowercase letters.
+Sample Input 1:
+abcde
+hello
+Sample Output 1:
+igohj
+Explanation:
+To perform the xor operation, we convert each character in the secret key and message to its ASCII
+value and xor them. Then, we convert the resulting ASCII value back to its corresponding character.
+For example:
+• 'a' in the secret key has ASCII value 97
+• 'h' in the message has ASCII value 104
+• 97 xor 104 = 9
+• The 9
+th letter corresponds to the character 'i'
+• 'b' in the secret key has ASCII value 98
+• 'e' in the message has ASCII value 101
+• 98 xor 101 = 7
+• The 7
+th letter corresponds to the character 'g'
+• ... and so on
+Therefore, the resulting string is " igohj".
